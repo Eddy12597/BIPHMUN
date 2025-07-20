@@ -1,0 +1,3 @@
+[build]
+  publish = "pages"
+  # No base directory needed since you're not running a build
