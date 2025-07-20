@@ -1,0 +1,110 @@
+:root{
+    /* Maybe Invert the Background and Text color later */
+    --main-bg-color: white;
+    --main-text-color: hsl(206, 85%, 27%);
+    --main-title-font: "Cormorant Garamond",  "cormorant", garamond, serif;
+
+
+    --menu-bg-color: var(--main-text-color);
+    --menu-text-color: var(--main-bg-color);
+}
+
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    font-weight: normal;
+}
+
+#menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--menu-bg-color);
+    color: var(--menu-text-color);
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+#menubar img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#logo-image {
+    max-height: 60px;
+    max-width: auto;
+    border-radius: 0px;
+}
+
+#link-icons-section {
+    display: flex;
+    align-content: space-evenly;
+    gap: 50px;
+
+    padding-left: 40px;
+    /* for debugging */
+    border-radius: 10px;
+    border-color: white;
+}
+
+.link-icons {
+    min-width: 50px;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: normal;
+    color: var(--menu-text-color);
+}
+
+#title-section {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#bg-image {
+    background-image: url('/assets/images/title-bg.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-size: auto 50%;
+
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+}
+
+#title-text {
+    color: var(--main-bg-color);
+
+    font-family: var(--main-title-font);
+    font-size: 50px;
+
+    position: relative;
+}
+
+#theme-text {
+    color: var(--main-bg-color);
+
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+
+    position: relative;
+}
