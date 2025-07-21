@@ -1,3 +1,8 @@
+/* for debugging */
+div {
+    border: 2px solid orange;
+}
+
 :root{
     /* Maybe Invert the Background and Text color later */
     --main-bg-color: white;
@@ -30,13 +35,14 @@ a {
     color: var(--menu-text-color);
     padding-left: 40px;
     padding-right: 30px;
+    position: relative;
 }
 
 #menubar img {
     display: block;
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #logo-image {
@@ -48,12 +54,10 @@ a {
 #link-icons-section {
     display: flex;
     align-content: space-evenly;
-    gap: 50px;
+    gap: 40px;
 
-    padding-left: 40px;
-    /* for debugging */
-    border-radius: 10px;
-    border-color: white;
+    padding-left: 20px;
+    position: relative;
 }
 
 .link-icons {
@@ -68,12 +72,73 @@ a {
     color: var(--menu-text-color);
 }
 
+#link-icons-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--menu-bg-color);
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+#link-icons-dropdown a {
+    padding: 10px;
+    color: var(--menu-text-color);
+    text-decoration: none;
+    display: block;
+}
+
+#link-icons-dropdown a:hover {
+    background-color: var(--hover-bg-color); /* Change color on hover */
+}
+
+#dropdown-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #link-icons-section {
+        display: none;
+        /* flex-direction: column;
+        width: 100%;
+        background-color: var(--menu-bg-color);
+        padding-top: 10px;
+        padding-bottom: 10px; */
+    }
+
+    #dropdown-btn {
+        display: block;
+    }
+
+    #menubar {
+        justify-content: space-between;
+    }
+
+    #link-icons-section.active {
+        display: flex;
+    }
+}
+
+
+
 #title-section {
     position: relative;
     height: 60vh;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    /* for debugging */
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
 }
 
 #bg-image {
@@ -82,12 +147,18 @@ a {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-size: auto 50%;
+    background-size: auto 60%;
 
     position: absolute;
     width: 100%;
     height: 60vh;
     z-index: -1;
+}
+
+#title-text-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
 }
 
 #title-text {
@@ -97,6 +168,7 @@ a {
     font-size: 50px;
 
     position: relative;
+    
 }
 
 #theme-text {
