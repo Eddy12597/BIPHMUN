@@ -1,10 +1,21 @@
 /* for debugging */
 * {
-    border: 2px solid orange;
+    outline: 2px solid orange;
+    position: relative;
+}
+
+*::after {
+    content: attr(class) " " attr(id);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 12px monospace;
+    color: black;
+    background: white;
 }
 
 :root{
-    /* Maybe Invert the Background and Text color later */
+    
     --main-bg-color: white;
     --main-text-color: hsl(206, 85%, 27%);
     --main-title-font: "Cormorant Garamond",  "cormorant", garamond, serif;
@@ -12,6 +23,8 @@
 
     --menu-bg-color: var(--main-text-color);
     --menu-text-color: var(--main-bg-color);
+
+    --about-margin: 200px;
 }
 
 body{
@@ -22,6 +35,7 @@ body{
     padding: 0;
 }
 
+/* for links */
 a {
     color: white;
     font-weight: normal;
@@ -133,21 +147,17 @@ a {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
-    /* for debugging */
-    border-width: 5px;
-    border-style: solid;
-    border-color: black;
+    /* align-items: flex-start; */
+    align-items: center;
 }
 
 #bg-image {
-    background-image: url('/assets/images/title-bg.avif');
+    background-image: url('/assets/images/title-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-size: auto 60%;
+    background-size: 100%;
 
     position: absolute;
     width: 100%;
@@ -158,14 +168,14 @@ a {
 #title-text-content {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 #title-text {
     color: var(--main-bg-color);
 
     font-family: var(--main-title-font);
-    font-size: 50px;
+    font-size: 70px;
 
     position: relative;
     
@@ -175,8 +185,51 @@ a {
     color: var(--main-bg-color);
 
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     font-style: italic;
 
     position: relative;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--menu-bg-color);
+}
+
+#about-biphmun {
+    /* display: flex; */
+    margin-left: var(--about-margin);
+    margin-right: var(--about-margin);
+}
+
+#about-biphmun-text {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Cormorand Garamond", "Times New Roman";
+    color: var(--menu-text-color);
+}
+
+#about-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    margin-left: var(--about-margin);
+    margin-right: var(--about-margin);
+
+    color: var(--menu-text-color);
+    
+}
+
+.about-paragraph {
+    /* margin: 20px; */
+    font-weight: normal;
+    font-size: 24px;
+    font-family: "Times New Roman";
 }
