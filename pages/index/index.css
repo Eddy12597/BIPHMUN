@@ -1,5 +1,5 @@
 /* for debugging */
-* {
+/* * {
     outline: 2px solid orange;
     position: relative;
 }
@@ -12,7 +12,7 @@
     font: 12px monospace;
     color: black;
     background: white;
-}
+} */
 
 /* settings */
 :root{
