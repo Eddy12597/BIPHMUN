@@ -168,6 +168,7 @@ a {
 #title-text-content {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
     /* padding-left: 40px; */
 }
 
@@ -201,6 +202,7 @@ a {
 
 #about-biphmun {
     /* display: flex; */
+    margin-top: 10px;
     margin-left: var(--about-margin);
     margin-right: var(--about-margin);
 }
@@ -219,9 +221,10 @@ a {
 
     margin-top: 30px;
     margin-bottom: 30px;
-
     margin-left: var(--about-margin);
     margin-right: var(--about-margin);
+
+    max-width: 1300px;
 
     color: var(--menu-text-color);
     
@@ -232,4 +235,20 @@ a {
     font-weight: normal;
     font-size: 24px;
     font-family: "Times New Roman";
+}
+
+#group-photo-outer-div {
+    display: flex;
+    position: relative;
+}
+
+#group-photo {
+    background-image: url('/assets/images/group-photo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100%;
+    height: 900px;
 }
