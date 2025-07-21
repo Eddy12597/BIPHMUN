@@ -1,0 +1,155 @@
+/* for debugging */
+* {
+    outline: 2px solid orange;
+    position: relative;
+}
+
+*::after {
+    content: attr(class) " " attr(id);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 12px monospace;
+    color: black;
+    background: white;
+}
+
+
+/* settings */
+:root{
+    
+    --main-bg-color: white;
+    --main-text-color: hsl(206, 85%, 27%);
+    --main-title-font: "Cormorant Garamond",  "cormorant", garamond, serif;
+
+
+    --menu-bg-color: var(--main-text-color);
+    --menu-text-color: var(--main-bg-color);
+
+    --about-margin: 200px;
+}
+
+/* Menu Bar */
+
+#menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--menu-bg-color);
+    color: var(--menu-text-color);
+    padding-left: 60px;
+    padding-right: 30px;
+    position: relative;
+}
+
+#menubar img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+}
+
+#logo-image {
+    max-height: 7vh;
+    max-width: auto;
+    border-radius: 0px;
+}
+
+#link-icons-section {
+    display: flex;
+    align-content: space-evenly;
+    gap: 40px;
+
+    padding-left: 20px;
+    position: relative;
+}
+
+.link-icons {
+    min-width: 50px;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: normal;
+    color: var(--menu-text-color);
+}
+
+#link-icons-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--menu-bg-color);
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+#link-icons-dropdown a {
+    padding: 10px;
+    color: var(--menu-text-color);
+    text-decoration: none;
+    display: block;
+}
+
+#link-icons-dropdown a:hover {
+    background-color: var(--hover-bg-color); /* Change color on hover */
+}
+
+#dropdown-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #link-icons-section {
+        display: none;
+        /* flex-direction: column;
+        width: 100%;
+        background-color: var(--menu-bg-color);
+        padding-top: 10px;
+        padding-bottom: 10px; */
+    }
+
+    #dropdown-btn {
+        display: block;
+    }
+
+    #menubar {
+        justify-content: space-between;
+    }
+
+    #link-icons-section.active {
+        display: flex;
+    }
+}
+
+#info {
+    display: flex;
+    max-height: 10wh;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+}
+
+#credits {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 20px;
+}
+
+#contact-and-address {
+    flex: 0.7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
