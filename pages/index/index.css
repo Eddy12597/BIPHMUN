@@ -1,7 +1,7 @@
 
 body{
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    background-color: var(--main-white);
+    color: var(--main-white);
 
     margin: 0;
     padding: 0;
@@ -46,17 +46,17 @@ a {
 }
 
 #title-text {
-    color: var(--main-bg-color);
+    color: var(--main-white);
 
     font-family: var(--main-title-font);
-    font-size: 70px;
+    font-size: var(--title-font-size);
 
     position: relative;
     
 }
 
 #theme-text {
-    color: var(--main-bg-color);
+    color: var(--main-white);
 
     font-weight: normal;
     font-size: 24px;
@@ -70,7 +70,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--menu-bg-color);
+    background-color: var(--main-blue);
 }
 
 #about-biphmun {
@@ -84,7 +84,7 @@ a {
     font-weight: bold;
     font-size: 50px;
     font-family: "Cormorand Garamond", "Times New Roman";
-    color: var(--menu-text-color);
+    color: var(--main-white);
 }
 
 #about-texts {
@@ -99,7 +99,7 @@ a {
 
     max-width: 1300px;
 
-    color: var(--menu-text-color);
+    color: var(--main-white);
     
 }
 

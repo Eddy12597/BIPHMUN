@@ -1,5 +1,5 @@
 /* for debugging */
-/* * {
+* {
     outline: 1px solid orange;
     position: relative;
 }
@@ -12,21 +12,23 @@
     font: 12px monospace;
     color: black;
     background: white;
-} */
+}
 
 
 /* settings */
 :root{
     
-    --main-bg-color: white;
-    --main-text-color: hsl(206, 85%, 27%);
+    --main-white: white;
+    --main-blue: hsl(206, 85%, 27%);
     --main-title-font: "Cormorant Garamond",  "cormorant", garamond, serif;
 
 
-    --menu-bg-color: var(--main-text-color);
-    --menu-text-color: var(--main-bg-color);
+    --menu-bg-color: var(--main-blue);
+    --menu-text-color: var(--main-white);
 
     --about-margin: 200px;
+
+    --title-font-size: 70px;
 }
 
 /* Menu Bar */
@@ -135,8 +137,8 @@
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--main-text-color);
-    color: var(--main-bg-color);
+    background-color: var(--main-blue);
+    color: var(--main-white);
 }
 
 #credits {
