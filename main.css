@@ -34,6 +34,8 @@
 
     --main-beige: #ede7d3;
     --main-black: black;
+
+    --menubar-height: 
 }
 
 /* Menu Bar */
@@ -42,6 +44,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
+
     background-color: var(--menu-bg-color);
     color: var(--menu-text-color);
     padding-left: 60px;
@@ -136,11 +140,20 @@
     }
 }
 
+/* is it necessary? might cause bugs idk*/
+/* 
+#main {
+  min-height: 90vh;
+  padding-bottom: 20px;
+} */
+
 #info {
     display: flex;
     max-height: 10wh;
     justify-content: space-evenly;
     align-items: center;
+
+    position: relative;
 
     background-color: var(--main-blue);
     color: var(--main-white);
