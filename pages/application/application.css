@@ -49,7 +49,42 @@
     width: 50vw;
 }
 
-#basic-info-title {
+#conf-info-title {
     font-size: 50px;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif
+}
+
+#conf-info {
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-items: space-between;
+
+    /* for lists
+    list-style-type: disc;
+    padding-left: 10px; */
+}
+
+
+.specific-info {
+    display: flex;
+    align-items: center;
+    min-width: 40vw;
+    gap: 1vw;
+
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info-category-name {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.info-value {
+    display: flex;
 }
