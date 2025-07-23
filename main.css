@@ -1,5 +1,5 @@
 /* for debugging */
-/* * {
+* {
     outline: 1px solid orange;
     position: relative;
 }
@@ -12,7 +12,7 @@
     font: 12px monospace;
     color: black;
     background: white;
-} */
+}
 
 
 /* settings */
@@ -22,6 +22,8 @@
     --main-blue: hsl(206, 85%, 27%);
     --main-title-font: "Cormorant Garamond",  "cormorant", garamond, serif;
 
+    --main-text-font: 'Times New Roman', Times, serif;
+
 
     --menu-bg-color: var(--main-blue);
     --menu-text-color: var(--main-white);
@@ -29,6 +31,9 @@
     --about-margin: 200px;
 
     --title-font-size: 70px;
+
+    --main-beige: #ede7d3;
+    --main-black: black;
 }
 
 /* Menu Bar */
@@ -40,7 +45,7 @@
     background-color: var(--menu-bg-color);
     color: var(--menu-text-color);
     padding-left: 60px;
-    padding-right: 30px;
+    padding-right: 60px;
     position: relative;
 }
 
