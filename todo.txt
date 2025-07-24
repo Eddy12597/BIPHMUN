@@ -1,0 +1,1 @@
+add school registration pdf file to assets/documents/school-app.pdf
