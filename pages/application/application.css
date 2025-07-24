@@ -50,7 +50,7 @@
 }
 
 #conf-info-title {
-    font-size: 50px;
+    font-size: 52px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif
 }
@@ -75,12 +75,12 @@
     min-width: 40vw;
     gap: 1vw;
 
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .info-category-name {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif
 }
@@ -103,7 +103,7 @@
 
 
 #conf-app-title {
-    font-size: 32px;
+    font-size: 34px;
     font-family: 'Times New Roman', Times;
     margin-top: 20px;
 
@@ -117,11 +117,16 @@
 }
 
 .link-section {
-    margin: 20px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-button {
+    margin: 20px;
     font-size: 20px;
     font-family: 'Times New Roman', Times;
-    min-height: 2vh;
+    min-height: 4vh;
+    border-radius: 10px;
+    background-color: #d8d8bb;
+    color: var(--main-blue);
+    
 }
