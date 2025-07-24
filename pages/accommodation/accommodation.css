@@ -85,12 +85,13 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
 #choices-title-text {
-    font-size: 40px;
+    font-size: 50px;
     color: var(--main-blue);
 }
 
@@ -102,11 +103,62 @@ body, html {
     gap: 6vw;
 }
 
+.choice-title {
+    margin-top: 25px;
+
+    background-color: var(--main-white);
+    color: black;
+    font-weight: bold;
+    font-family: 'amatic sc', cursive;
+    /* border-radius: 5px; */
+    font-size: 35px;
+
+    text-align: center; /* for small viewport width */
+    padding-left: 30px;
+    padding-right: 50px; /* for bookmark */
+
+    clip-path: polygon(
+        0   0,            /* top-left */
+        calc(100% - 16px) 0,  /* move in 16px from top-right */
+        100% 50%,        /* tip of the bookmark */
+        calc(100% - 16px) 100%, /* back in 16px from bottom */
+        0   100%         /* bottom-left */
+    );
+}
+
+
 .choice-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    color: var(--main-black);
     min-width: min(30vw, 100px);
+
+    min-height: 50vh;
+    min-width: 22vw;
+    gap: 2vw;
+
+    border-radius: 25px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#le-meridien-hotel-container {
+    background-image: url('/assets/images/le-meridien.avif');
+
+}
+
+#plh-hotels-container {
+    background-image: url('/assets/images/plh-apartments.avif');
+}
+
+#others-container {
+    background-image: url('/assets/images/other-hotels.avif');
 }

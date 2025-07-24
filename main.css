@@ -1,5 +1,5 @@
 /* for debugging */
-* {
+/* * {
     outline: 1px solid orange;
     position: relative;
 }
@@ -12,7 +12,7 @@
     font: 10px monospace;
     color: black;
     background: white;
-}
+} */
 
 
 /* settings */
@@ -33,8 +33,9 @@
     --title-font-size: 70px;
 
     --main-beige: #ede7d3;
+    --darker-beige: #c2c29e;
     --main-black: black;
-
+    --main-dark-gray: #434343;
     --menubar-height: 
 }
 
