@@ -91,8 +91,9 @@ body, html {
 }
 
 #choices-title-text {
-    font-size: 50px;
+    font-size: 45px;
     color: var(--main-blue);
+    text-wrap: 1;
 }
 
 #choices-container {
@@ -111,7 +112,7 @@ body, html {
     font-weight: bold;
     font-family: 'amatic sc', cursive;
     /* border-radius: 5px; */
-    font-size: 35px;
+    font-size: calc((2vw + 25px) / 2);
 
     text-align: center; /* for small viewport width */
     padding-left: 30px;
@@ -132,10 +133,10 @@ body, html {
     flex-direction: column;
     align-items: flex-start;
 
-    min-width: min(30vw, 100px);
-
+    min-width: 320px;
     min-height: 50vh;
-    min-width: 22vw;
+    margin-top: 50px;
+
     gap: 2vw;
 
     border-radius: 25px;
@@ -146,8 +147,106 @@ body, html {
     
     height: 100%;
     width: 100%;
+
+    /* Animation */
+
+    transition: transform 0.3s ease;
+    transform-origin: center;
+
+    flex-wrap: wrap;
+
+    /* for displaying info card */
+    position: relative;
+    overflow: hidden;
 }
 
+.choice-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    color: black;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-family: 'Roboto Condensed', cursive;
+    font-size: 16px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.choice-container:hover .choice-info {
+    transform: translateY(0);
+}
+
+/* Adjust the hover scale effect to account for the info card */
+.choice-container:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.choice-info h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: var(--main-blue);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.choice-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.price {
+    font-weight: bold;
+    color: hsl(183, 71%, 34%); /* Gold color for price */
+    font-size: 1.4em;
+}
+
+/* for mobile / narrow viewports */
+
+@media (max-width: 1080px) {
+    #choices-container {
+        flex-direction: column;
+    }
+    .choice-container {
+        width: 100%;
+        min-width: 60vw;
+        /* min-width: 320px; */
+        flex: 1 1 auto;
+    }
+}
+
+.choice-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* for mobile  support */
+
+.choice-container.active .choice-info,
+.choice-container:focus .choice-info,
+.choice-container:focus-within .choice-info {
+    transform: translateY(0);
+}
+
+.choice-container.active,
+.choice-container:focus {
+    transform: scale(1.05) translateY(-10px);
+    outline: none; /* Remove default focus outline */
+}
+
+/* For better mobile UX, make sure taps are recognized */
+.choice-container {
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    cursor: pointer;
+}
+
+.links {
+    color: #2e2e2e;
+}
 
 
 #le-meridien-hotel-container {
