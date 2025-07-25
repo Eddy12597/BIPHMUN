@@ -39,7 +39,11 @@
     --menubar-height: 
 }
 
-/* Menu Bar */
+/*
+/==========================+
+/ M E N U B A R            |
+/==========================+
+*/
 
 #menubar {
     display: flex;
@@ -111,42 +115,81 @@
     background-color: var(--hover-bg-color); /* Change color on hover */
 }
 
-#dropdown-btn {
-    display: none;
+/* Dropdown button style */
+.dropbtn {
+    color: white;
     font-size: 30px;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
 }
 
-@media screen and (max-width: 800px) {
+/* Container div */
+.dropdown-btn {
+    position: relative;
+    display: none; /* Hidden by default, shown on mobile */
+}
+
+/* Dropdown content */
+#dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dropdown links */
+#dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effects */
+#dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Active state for dropdown */
+.dropdown-btn.active .dropbtn {
+    color: #ccc;
+}
+
+/* Show dropdown when active class is present */
+#dropdown-content.show {
+    display: block;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1080px) {
     #link-icons-section {
         display: none;
-        /* flex-direction: column;
-        width: 100%;
-        background-color: var(--menu-bg-color);
-        padding-top: 10px;
-        padding-bottom: 10px; */
     }
-
-    #dropdown-btn {
+    .dropdown-btn {
         display: block;
-    }
-
-    #menubar {
-        justify-content: space-between;
-    }
-
-    #link-icons-section.active {
-        display: flex;
     }
 }
 
-/* is it necessary? might cause bugs idk*/
-/* 
-#main {
-  min-height: 90vh;
-  padding-bottom: 20px;
-} */
+/*
+/==========================+
+/ F O O T N O T E S        |
+/==========================+
+*/
 
 #info {
     display: flex;

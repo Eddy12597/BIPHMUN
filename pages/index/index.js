@@ -1,7 +1,16 @@
-const dropdownBtn = document.getElementById('dropdown-btn');
-dropdownBtn.addEventListener('click', function() {
-    const dropdownContent = document.getElementById('link-icons-section');
-    dropdownContent.classList.toggle('active');
+function toggleDropdown() {
+  const dropdown = document.getElementById("dropdown-content");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+// Close the dropdown if clicked outside
+document.addEventListener('click', function(event) {
+  const dropdownBtn = document.getElementById("dropbtn");
+  const dropdownContent = document.getElementById("dropdown-content");
+  
+  if (event.target !== dropdownBtn && !dropdownBtn.contains(event.target)) {
+    dropdownContent.style.display = "none";
+  }
 });
 
 const parallaxCoef = 0.4;
