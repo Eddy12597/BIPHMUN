@@ -19,6 +19,8 @@
   <!--for github link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
+  <script src="main.js" defer></script>
+
   <title>BIPHMUN</title>
 </head>
 <body>
@@ -56,8 +58,35 @@
       </a>
     </div>
     <!--Dropdown Hamburger button and menu-->
-    <div id="dropdown-btn" class="dropdown-btn">
-      <span>&#9776</span>
+    <div id="dropdown-btn-section" class="dropdown-btn">
+      <span id="dropbtn" onclick="toggleDropdown()">&#9776</span>
+      <div id="dropdown-content">
+        <a href="/about.html">
+          <p class="link-icons">
+            About
+          </p>
+        </a>
+        <a href="/accommodation.html">
+          <p class="link-icons">
+            Accommodation
+          </p>
+        </a>
+        <a href="/application.html">
+          <p class="link-icons">
+            Application
+          </p>
+        </a>
+        <a href="/committees.html">
+          <p class="link-icons">
+            Committees
+          </p>
+        </a>
+        <a href="/schedule.html">
+          <p class="link-icons">
+            Schedule
+          </p>
+        </a>
+      </div>
     </div>
   </div>
 
