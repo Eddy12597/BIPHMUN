@@ -5,7 +5,7 @@ function toggleDropdown() {
 
 // Close the dropdown if clicked outside
 document.addEventListener('click', function(event) {
-  const dropdownBtn = document.getElementById("dropbtn");
+  const dropdownBtn = document.getElementById("drop-btn");
   const dropdownContent = document.getElementById("dropdown-content");
   
   if (event.target !== dropdownBtn && !dropdownBtn.contains(event.target)) {

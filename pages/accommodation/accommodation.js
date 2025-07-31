@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'le-meridien-hotel-container': {
             title: 'Le Meridien Huizhou',
             description: 'Luxurious 5-star hotel by the beach',
-            price: '￥1400~1600/room/night',
+            price: '￥1300~1500/room/night',
             link: "https://www.marriott.com/en-us/hotels/huzlm-le-meridien-xiaojing-bay/overview/",
         },
         'plh-hotels-container': {
             title: 'PLH Hotel Apartments',
             description: 'Spacious apartment-style accommodations perfect for extended stays with full kitchen facilities.',
-            price: '￥ 400~600/room/night',
+            price: '￥ 200~500/room/night',
             link: "https://surl.amap.com/oXhZbT712ey6",
         },
         'others-container': {

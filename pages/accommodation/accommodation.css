@@ -65,10 +65,9 @@ body, html {
 
 #accom-title-text {
     width: 60vw;
-    font-family: var(--main-text-font);
+    font-family: var(--main-text-font), sans-serif;
     color: var(--main-white);
     position: absolute;
-    
     font-size: 60px;
 }
 
@@ -92,16 +91,18 @@ body, html {
 }
 
 #choices-title-text {
-    font-size: 45px;
+    font-size: 40px;
     color: var(--main-blue);
-    text-wrap: 1;
+    text-wrap: wrap;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    text-align: center;
 }
 
 #choices-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: space-between;
     gap: 6vw;
 }
 
@@ -269,6 +270,7 @@ body, html {
     align-items: center;
     width: 100%;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 #transportation-title {
@@ -278,13 +280,12 @@ body, html {
 }
 
 #transportation-title-text {
-    font-family: var(--main-text-font);
-    color: var(--main-white);
+    font-family: var(--main-text-font), sans-serif;
     position: relative;
     
     font-size: 45px;
     color: var(--main-blue);
-    text-wrap: 1;
+    text-wrap: wrap;
 }
 
 #transportation-description {
@@ -294,6 +295,7 @@ body, html {
     font-size: 16px;
     margin-left: 10vw;
     margin-right: 10vw;
+    text-align: center;
 }
 
 #transportation-NOT {
@@ -302,9 +304,10 @@ body, html {
 
 #transportation-info {
     display: flex;
-    justify-content: center space-between;
+    justify-content: center;
     align-items: center;
     gap: 5vw;
+    flex-wrap: wrap;
 }
 
 .transp-container {

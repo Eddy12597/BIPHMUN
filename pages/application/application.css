@@ -105,7 +105,7 @@
 
 #conf-app-title {
     font-size: 34px;
-    font-family: 'Times New Roman', Times;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
 
 
@@ -125,7 +125,7 @@
 
     margin: 20px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 
     min-height: 4vh;
