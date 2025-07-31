@@ -338,3 +338,24 @@ body, html {
     justify-content: space-between;
     gap: 2vh;
 }
+
+#bus-schedule-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#bus-schedule-image {
+    width: clamp(500px, 60vw, 800px);
+    object-fit: cover;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+#bus-schedule-image:hover,
+#bus-schedule-image:active { /* :active will work for tap on mobile */
+    transform: scale(1.05); /* Scale to 1.05 times the original size */
+    cursor: pointer; /* Optional: changes cursor to indicate it's interactive */
+}

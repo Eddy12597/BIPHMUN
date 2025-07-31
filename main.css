@@ -1,6 +1,6 @@
 /* main.css */
 
-
+/* 
 * {
     outline: 1px solid orange;
     position: relative;
@@ -14,7 +14,7 @@
     font: 10px monospace;
     color: black;
     background: white;
-}
+} */
 
 
 /* settings */
@@ -215,6 +215,8 @@
 
     background-color: var(--main-blue);
     color: var(--main-white);
+
+    font-size: 12px;
 }
 
 #credits {
