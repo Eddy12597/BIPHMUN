@@ -1,0 +1,65 @@
+#schedule-title-section {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(55, 55, 55, 0.25)),
+        url('/assets/images/inv-letter-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    
+
+    width: 100%;
+    height: 45vh;
+    z-index: -1;
+}
+
+#schedule-title-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#schedule-title {
+    font-family: var(--main-title-font);
+    color: var(--main-white);
+    font-size: 60px;
+    width: 50vw;
+}
+
+#schedule-main-section {
+    width: 100%;
+    background-color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-text-title {
+    font-family: var(--main-title-font);
+    font-size: 45px;
+    text-decoration: underline dashed;
+}
+
+.schedule-img {
+    max-width: 50vw;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.schedule-img:hover,
+.schedule-img:active,
+.schedule-img.tapped {
+    transform: scale(1.03);
+}
+

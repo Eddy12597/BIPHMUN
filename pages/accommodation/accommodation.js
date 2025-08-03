@@ -12,8 +12,6 @@ const parallaxCoef = 0.4;
 });
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // Info content for each choice
     const choiceInfo = {
