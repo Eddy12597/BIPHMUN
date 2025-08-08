@@ -1,0 +1,37 @@
+#committees-title-section {
+    background-image: url('/assets/images/un-bg-app.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+
+}
+
+#committees-title-text-section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.committee-title {
+    width: 60vw;
+    font-size: 60px;
+    font-family: var(--main-title-font);
+    font-weight: var(--title-font-size);
+    font-weight: bold;
+}
+
+#theme-text {
+    font-size: 35px;
+}
+
+.committee-section {
+    height: 85vh;
+    display: flex;
+}
+
+.subsection {
+    width: 50%;
+    height: 100%;
+}
