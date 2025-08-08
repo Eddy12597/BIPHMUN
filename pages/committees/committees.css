@@ -1,10 +1,10 @@
 #committees-title-section {
-    background-image: url('/assets/images/un-bg-app.jpg');
+    background-image: url('/assets/images/un-bg-darker.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 40vh;
-
+    background-size: 100%;
+    min-height: 50vh;
 }
 
 #committees-title-text-section {
@@ -16,10 +16,13 @@
 
 .committee-title {
     width: 60vw;
-    font-size: 60px;
+    font-size: 85px;
     font-family: var(--main-title-font);
     font-weight: var(--title-font-size);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 #theme-text {
