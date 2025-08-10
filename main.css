@@ -29,7 +29,7 @@
 
     --main-text-font: 'Times New Roman', Times, serif;
     --committee-title-font: 'Bebas Neue', sans-serif;
-
+    --sub-title-font: 'georgia', 'palatino', sans-serif;
 
     --menu-bg-color: var(--main-blue);
     --menu-text-color: var(--main-white);
