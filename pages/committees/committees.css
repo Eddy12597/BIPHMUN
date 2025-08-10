@@ -1,10 +1,19 @@
 #committees-title-section {
-    background-image: url('/assets/images/un-bg-darker.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    position: relative;
     min-height: 50vh;
+    overflow: hidden;
+}
+
+#committees-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateY(0);
 }
 
 #committees-title-text-section {
@@ -14,7 +23,7 @@
     align-items: center;
 }
 
-.committee-title {
+#committees-title {
     width: 60vw;
     font-size: 85px;
     font-family: var(--main-title-font);
@@ -28,7 +37,9 @@
 
 #theme-text {
     font-size: 35px;
+    font-family: var(--main-title-font);
 }
+
 
 .committee-section {
     height: 85vh;
@@ -38,4 +49,45 @@
 .subsection {
     width: 50%;
     height: 100%;
+}
+
+.committee-poster {
+    background-image: url('/assets/images/committee-banner-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.committee-desc {
+    background-color: #70A1C7;
+}
+
+.committee-logo {
+    width: 50%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.committee-title {
+    font-family: var(--committee-title-font);
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.committee-topics-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.committee-topic {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
 }
