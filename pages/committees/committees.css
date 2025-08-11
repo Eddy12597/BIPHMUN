@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('/assets/fonts/Georgia.ttf') format('truetype');
+    
+}
+
 #committees-title-section {
     position: relative;
     min-height: 50vh;
@@ -117,15 +123,17 @@
 }
 
 .committee-desc-title {
-    font-family: var(--main-title-font);
-    font-size: 7vh;
+    font-family: 'Georgia', var(--main-title-font);
+    font-weight: normal;
+    font-size: 5.25vh;
     margin-right: 4vw;
     margin-left: 4vw;
 }
 
 .committee-level {
-    font-family: var(--main-text-font);
-    font-size: 4vh;
+    font-family: 'Georgia', var(--main-text-font);
+    font-weight: normal;
+    font-size: 3.5vh;
 }
 
 .bg-guides {

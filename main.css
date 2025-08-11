@@ -43,7 +43,18 @@
     --main-black: black;
     --main-dark-gray: #434343;
     --light-blue: hwb(206 10% 37%);
+
+
+
+
+    @font-face {
+        font-family: 'Georgia';
+        src: url('/assets/fonts/Georgia.ttf') format('truetype');
+        font-weight: normal; 
+        font-style: normal; 
+    }
 }
+
 
 /*
 /==========================+
