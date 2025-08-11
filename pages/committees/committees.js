@@ -5,6 +5,7 @@ document.addEventListener('scroll', function () {
     bg.style.transform = `translateY(${scrollY * 0.4}px)`;
 });
 
+/*
 document.querySelectorAll('.committee-chair').forEach((el) => {
     if (el.innerText.includes('__TBD__')) {
         el.innerHTML +=
@@ -13,3 +14,5 @@ document.querySelectorAll('.committee-chair').forEach((el) => {
             `;
     }
 })
+
+*/

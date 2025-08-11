@@ -82,7 +82,7 @@
 
 .committee-title {
     font-family: var(--committee-title-font);
-    font-size: 72px;
+    font-size: 8vh;
     font-weight: normal;
 }
 
@@ -101,9 +101,9 @@
 .committee-chairs {
     display: flex;
     flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 40px;
 }
 
 .committee-chair {
@@ -118,7 +118,9 @@
 
 .committee-desc-title {
     font-family: var(--main-title-font);
-    font-size: 7.5vh;
+    font-size: 7vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
 }
 
 .committee-level {
@@ -140,7 +142,7 @@
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
 
     background-color: var(--main-white);
     min-width: 60px;
@@ -158,7 +160,7 @@
     font-size: 24px;
     font-weight: bold;
 
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 15px;
