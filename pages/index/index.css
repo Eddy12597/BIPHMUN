@@ -29,7 +29,7 @@ a {
     background-size: cover;
     /* background-size: 100%; */
 
-    width: 100vw;
+    width: 100%;
     z-index: -1;
 
     padding-bottom: 30px;
@@ -111,7 +111,7 @@ a {
     /* display: flex; */
     position: relative;
     height: 85vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
