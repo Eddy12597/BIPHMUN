@@ -7,7 +7,7 @@
     <!--stylesheet and icon-->
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="pages/index/index.css"/>
-    <link rel="stylesheet" href="pages/application/application.css"/>
+    <link rel="stylesheet" href="pages/about/about.css"/>
 
     <link rel="icon" href="assets/images/logo-square.png" type="image/x-icon">
 
@@ -19,18 +19,49 @@
     <!--for github link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="main.js" defer></script>
+    <script src="/pages/about/about.js" defer></script>
 
     <title>BIPHMUN</title>
 </head>
 <body>
 
-  <div id="menubar">
-    <div id="logo">
-      <a href="/index.html">
-        <img id="logo-image" src="assets/logos/logo-rect-white.png" alt="BIPHMUN"/>
-      </a>      
-    </div>
-    <div id="link-icons-section">
+<div id="menubar">
+  <div id="logo">
+    <a href="/index.html">
+      <img id="logo-image" src="assets/logos/logo-rect-white.png" alt="BIPHMUN"/>
+    </a>      
+  </div>
+  <div id="link-icons-section">
+    <a href="/about.html">
+      <p class="link-icons">
+        About
+      </p>
+    </a>
+    <a href="/accommodation.html">
+      <p class="link-icons">
+        Accommodation
+      </p>
+    </a>
+    <a href="/application.html">
+      <p class="link-icons">
+        Application
+      </p>
+    </a>
+    <a href="/committees.html">
+      <p class="link-icons">
+        Committees
+      </p>
+    </a>
+    <a href="/schedule.html">
+      <p class="link-icons">
+        Schedule
+      </p>
+    </a>
+  </div>
+  <!--Dropdown Hamburger button and menu-->
+  <div id="dropdown-btn-section" class="dropdown-btn">
+    <span id="drop-btn" onclick="toggleDropdown()">&#9776</span>
+    <div id="dropdown-content">
       <a href="/about.html">
         <p class="link-icons">
           About
@@ -57,38 +88,37 @@
         </p>
       </a>
     </div>
-    <!--Dropdown Hamburger button and menu-->
-    <div id="dropdown-btn-section" class="dropdown-btn">
-      <span id="drop-btn" onclick="toggleDropdown()">&#9776</span>
-      <div id="dropdown-content">
-        <a href="/about.html">
-          <p class="link-icons">
-            About
-          </p>
-        </a>
-        <a href="/accommodation.html">
-          <p class="link-icons">
-            Accommodation
-          </p>
-        </a>
-        <a href="/application.html">
-          <p class="link-icons">
-            Application
-          </p>
-        </a>
-        <a href="/committees.html">
-          <p class="link-icons">
-            Committees
-          </p>
-        </a>
-        <a href="/schedule.html">
-          <p class="link-icons">
-            Schedule
-          </p>
-        </a>
+  </div>
+</div>
+
+
+<div id="main">
+  <!--with bg image-->
+  <div id="about-top-section-with-photos">
+    <div id="about-top-text-section">
+      <div id="about-top-text-header" class="about-text">
+        About BIPHMUN
       </div>
+      <div id="about-section-title-separator" class="about-text">__________</div>
+      <p id="about-top-text-main" class="about-text">
+        BIPHMUN was established in 2022 by Fiona Chiang and Micky Yang. Since its inception, 
+        it has grown into a vibrant platform for students to engage in meaningful debate, 
+        explore global issues, and refine their diplomatic skills. The conference brings together 
+        delegates from diverse backgrounds, fostering collaboration, critical thinking, and 
+        innovative solutions to the challenges facing our world today. Whether participating 
+        in intense committee sessions or engaging in cross-cultural exchanges, delegates leave 
+        BIPHMUN with not only enhanced knowledge, but also lifelong friendships and invaluable 
+        leadership experience. Despite our short history, we guarantee professionalism and expertise.
+      </p>
+
     </div>
   </div>
+  <div id="timeline-section">
+    <div id="timeline-container">
+      
+    </div>
+  </div>
+</div>
 
 <!--contains address, credits, and contact (email)-->
 <div id="info">

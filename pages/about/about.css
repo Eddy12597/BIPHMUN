@@ -1,0 +1,70 @@
+#about-top-section-with-photos {
+    background-image: url('/assets/images/un-bg-app.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    
+    width: 100%;
+    height: auto;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    z-index: -1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#about-top-text-section {
+    width: 70%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 60px, 100px, 60px, 100px;
+
+    background-color: var(--main-white);
+}
+
+.about-text {
+    font-family: var(--main-text-font);
+    color: black;
+}
+
+#about-top-text-header {
+    font-family: var(--sub-title-font);
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 9vh;
+}
+
+#about-top-text-main {
+    margin-bottom: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 19px;
+}
+
+#timeline-section {
+    height: 80vh;
+    background-color: hsl(42, 67%, 86%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#timeline-container {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+}
