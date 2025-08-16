@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     z-index: -1;
     padding-bottom: 30px;
@@ -130,7 +130,14 @@
 
     min-height: 4vh;
     border-radius: 10px;
-    background-color: #d8d8bb;
-    color: var(--main-blue);
-    
+    /* background-color: #d8d8bb; */
+    background-color: var(--main-white);
+    color: black;
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.link-section:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
