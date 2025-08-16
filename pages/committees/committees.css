@@ -183,3 +183,91 @@
     border-radius: 20px;
     margin-top: 20px;
 }
+
+
+/* MOBILE SUPPORT */
+
+@media (max-width: 768px) {
+  /* Committee section adjustments */
+  .committee-section {
+    flex-direction: column;
+    height: auto;
+    min-height: auto; /* Remove fixed min-height */
+
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+  }
+  
+  /* Hide poster section completely - no space reserved */
+  .committee-poster {
+    display: none !important; /* Ensure it overrides any other styles */
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Make description section take full width */
+  .committee-desc {
+    width: 100% !important;
+    padding: 30px 20px; /* Add some padding for mobile */
+    box-sizing: border-box;
+  }
+  
+  /* Adjust font sizes for mobile */
+  .committee-desc-title {
+    font-size: 2.5rem; /* Use rem for better scalability */
+    margin: 15px 0;
+  }
+  
+  .committee-level {
+    font-size: 1.8rem;
+  }
+  
+  /* Adjust background guides layout */
+  .bg-guides {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Adjust the title section for mobile */
+  #committees-title {
+    font-size: 3.5rem;
+    width: 90vw;
+    margin-top: 20px;
+  }
+  
+  #theme-text {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Ensure odd/even sections behave the same on mobile */
+  .odd, .even {
+    flex-direction: column;
+  }
+  
+  /* Adjust chair information layout */
+  .committee-chairs {
+    margin: 20px 0;
+  }
+  
+  .committee-chair {
+    margin: 10px 0;
+    font-size: 1.6rem;
+  }
+  
+  /* Adjust background guide buttons */
+  .bg-guide {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .topic-bg-link {
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+}
