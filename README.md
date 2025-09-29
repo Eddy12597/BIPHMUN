@@ -1,4 +1,4 @@
 # BIPHMUN
 Web Page for BIPHMUN
 
-[Website link](biphmun.netlify.app)
+[Website link](https://biphmun.netlify.app)
