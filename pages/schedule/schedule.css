@@ -66,6 +66,6 @@
 .schedule-img:hover,
 .schedule-img:active,
 .schedule-img.tapped {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 

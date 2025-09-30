@@ -28,3 +28,14 @@ widthMatch.addEventListener('change', handleWidthChange);
 
 // Run once on initial load
 handleWidthChange(widthMatch);
+
+
+console.clear = () => { 
+    console.log(["Never gonna give you up", 
+        "Never gonna let you down", 
+        "Never gonna run around and desert you", 
+        "Never gonna let you cry", 
+        "Never gonna say goodbye", 
+        "Never gonna tell a lie and hurt you"
+    ][Math.floor(Math.random() * 6)]); 
+};

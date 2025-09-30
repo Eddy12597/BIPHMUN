@@ -221,7 +221,7 @@ body, html {
 }
 
 .choice-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -236,7 +236,7 @@ body, html {
 
 .choice-container.active,
 .choice-container:focus {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.02) translateY(-10px);
     outline: none; /* Remove default focus outline */
 }
 
@@ -356,6 +356,6 @@ body, html {
 
 #bus-schedule-image:hover,
 #bus-schedule-image:active { /* :active will work for tap on mobile */
-    transform: scale(1.05); /* Scale to 1.05 times the original size */
+    transform: scale(1.02); /* Scale to 1.05 times the original size */
     cursor: pointer; /* Optional: changes cursor to indicate it's interactive */
 }
