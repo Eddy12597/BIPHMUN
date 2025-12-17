@@ -1,0 +1,18 @@
+checklist for changing/adding committees, or updating each year
+
+0. Change the year in:
+    a. index.html
+    b. invitation letter under that
+    c. (if applicable) the group photo at the bottom of index.html
+1. Change the bus schedule photo in accommodation.html and the text, if applicable
+2. Change the conference info in application.html and update the links
+3. Change the committees:
+    a. Usually five committees are enough. If you are going from 4 to 5, uncomment the bottom one. If you are going from 5 to 6 (congrats!), copy and paste the fourth at the end. Skip this if you are not adding/removing committees. Please comment the html if you are removing committees
+    b. Change the src and alt attributes of the <image> tag
+    c. Change the committee title
+    d. Change the committee topics
+    e. Change the committee-desc-title
+    f. Change the committee level, if applicable
+    g. Change the chairs
+    h. Change the BG href and download attributes (also the years) for the <a> tag
+4. Change the conference schedule and bus schedule in schedule.html
