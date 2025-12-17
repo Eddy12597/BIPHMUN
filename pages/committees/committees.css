@@ -81,7 +81,7 @@
 }
 
 .committee-logo {
-    width: 45%;
+    width: 40%;
     height: auto;
     margin-top: 8%;
 }
@@ -101,7 +101,8 @@
 
 .committee-topic {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.8vh;
+    font-size: 2.5vh;
+    margin: 0 5% 5% 5%;
 }
 
 .committee-chairs {

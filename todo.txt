@@ -1,1 +1,2 @@
 add school registration pdf file to assets/documents/school-app.pdf
+add chair bgs to download attribute
