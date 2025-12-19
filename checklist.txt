@@ -1,7 +1,7 @@
 checklist for changing/adding committees, or updating each year
 
-0. Change the year in:
-    a. index.html
+0. Change the homepage:
+    a. index.html: year and theme
     b. invitation letter under that
     c. (if applicable) the group photo at the bottom of index.html
 1. Change the bus schedule photo in accommodation.html and the text, if applicable
