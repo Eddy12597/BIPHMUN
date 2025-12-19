@@ -6,7 +6,7 @@
     align-items: center;
     color: var(--main-white);
 
-    background-image: url('/assets/images/title-bg.jpg');
+    background-image: url('/assets/images/un-bg-app.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,10 +29,10 @@
     flex-direction: column;
     margin-top: 60px;
 
-    margin-top: 60px;
+    margin-left: 3%;
     color: var(--main-white);
     font-size: var(--title-font-size);
-    
+    font-weight: bold;
     font-family: var(--main-title-font);
 }
 
@@ -73,7 +73,7 @@
 .specific-info {
     display: flex;
     align-items: center;
-    min-width: 40vw;
+    width: 100%;
     gap: 1vw;
 
     font-size: 24px;
@@ -106,9 +106,13 @@
 #conf-app-title {
     font-size: 34px;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
+    margin-bottom: 15px;
+}
 
-
+#conf-app-desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 20px;
 }
 
 #links-section {

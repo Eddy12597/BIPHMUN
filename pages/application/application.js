@@ -1,11 +1,10 @@
 const individualApplicationFormLink = 'https://forms.office.com/r/xGJjib7nGN';
 
-// though its a pdf
-const schoolApplicationFormLink = 'assets/documents/school-app.pdf';
+const schoolApplicationFormLink = 'assets/documents/BIPHMUN School Registration Form.xlsx';
 
 const chairApplicationFormLink = 'https://forms.office.com/r/CjfTJMapVf';
 
-const volunteerApplicationFormLink = 'https://example.com';
+const volunteerApplicationFormLink = 'https://forms.office.com/r/wmDs9xs7Ea';
 
 const handleIndv = () => {
   window.open(individualApplicationFormLink, '_blank');

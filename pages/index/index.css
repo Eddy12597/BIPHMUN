@@ -16,13 +16,13 @@ a {
 
 #title-section {
     position: relative;
-    height: 60vh;
+    height: 70vh;
 
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
     align-items: center;
-    background-image: url('/assets/images/title-bg.jpg');
+    background-image: url('/assets/images/debate-1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -49,6 +49,7 @@ a {
     font-size: var(--title-font-size);
 
     position: relative;
+    margin-top: 10vh;
     
 }
 
@@ -110,7 +111,7 @@ a {
 #group-photo-outer-div {
     /* display: flex; */
     position: relative;
-    height: 85vh;
+    height: 90vh;
     width: 100%;
     overflow: hidden;
     margin: 0;
