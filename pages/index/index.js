@@ -1,19 +1,6 @@
-function toggleDropdown() {
-  const dropdown = document.getElementById("dropdown-content");
-  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-}
 
-// Close the dropdown if clicked outside
-document.addEventListener('click', function(event) {
-  const dropdownBtn = document.getElementById("drop-btn");
-  const dropdownContent = document.getElementById("dropdown-content");
-  
-  if (event.target !== dropdownBtn && !dropdownBtn.contains(event.target)) {
-    dropdownContent.style.display = "none";
-  }
-});
 
-const parallaxCoef = 0.4;
+const parallaxCoef = 0.3;
 
   document.addEventListener("DOMContentLoaded", function () {
     const parallax = document.getElementById('group-photo');

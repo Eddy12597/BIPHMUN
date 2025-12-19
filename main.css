@@ -2,7 +2,7 @@
 
 /* This is for debug */
 
-/*
+/* 
 * {
     outline: 1px solid orange;
     position: relative;
@@ -16,8 +16,8 @@
     font: 10px monospace;
     color: black;
     background: white;
-}
-*/
+} */
+
 
 
 /* settings */
@@ -36,7 +36,7 @@
 
     --about-margin: 18vw;
 
-    --title-font-size: 70px;
+    --title-font-size: 8vh;
 
     --main-beige: #ede7d3;
     --darker-beige: #c2c29e;
@@ -163,6 +163,18 @@
 /* Dropdown content */
 #dropdown-content {
     display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--main-blue);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgb(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    animation: fadeIn 0.3s ease;
+}
+
+#dropdown-content.show {
+    display: block;
     position: absolute;
     right: 0;
     background-color: var(--main-blue);

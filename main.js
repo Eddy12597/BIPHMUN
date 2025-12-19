@@ -1,12 +1,20 @@
 function toggleDropdown() {
-    const dropdownContent = document.getElementById("dropdown-content");
-    const dropdownBtnSection = document.getElementById("dropdown-btn-section");
-
-    if (dropdownContent && dropdownBtnSection) {
-        dropdownContent.classList.toggle("show");
-        dropdownBtnSection.classList.toggle("active");
-    }
+  const dropdown = document.getElementById("dropdown-content");
+  dropdown.classList.toggle("show");
+//   console.log(`Dropdown visibility: ${dropdown.classList.contains('show')}`);
 }
+
+// Close the dropdown if clicked outside
+document.addEventListener('click', function(event) {
+  const dropdownBtn = document.getElementById("drop-btn");
+  const dropdownContent = document.getElementById("dropdown-content");
+  
+  if (!dropdownBtn.contains(event.target) && 
+      !dropdownContent.contains(event.target)) {
+    dropdownContent.classList.remove("show");
+    // console.log('Dropdown hidden');
+  }
+});
 
 // Create the media query list
 const widthMatch = window.matchMedia("(min-width: 1080px)");
