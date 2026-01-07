@@ -42,7 +42,7 @@
 
 #about-top-text-header {
     font-family: var(--sub-title-font);
-    font-size: 60px;
+    font-size: 5vh;
     font-weight: bold;
     margin-top: 9vh;
 }
