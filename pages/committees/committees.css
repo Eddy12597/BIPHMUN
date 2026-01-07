@@ -272,3 +272,9 @@
     padding: 10px 0;
   }
 }
+
+.topic-bg-link {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
