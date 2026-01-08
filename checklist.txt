@@ -16,3 +16,5 @@ checklist for changing/adding committees, or updating each year
     g. Change the chairs
     h. Change the BG href and download attributes (also the years) for the <a> tag
 4. Change the conference schedule and bus schedule in schedule.html
+5. Change title years
+6. Update timeline in <about> (and their css)
