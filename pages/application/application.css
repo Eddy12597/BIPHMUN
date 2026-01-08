@@ -12,7 +12,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 60vh;
+    height: 30vh;
     z-index: -1;
     padding-bottom: 30px;
 }
@@ -36,6 +36,66 @@
     font-family: var(--main-title-font);
 }
 
+#lang-selector {
+    display: flex;
+    gap: 10px;
+    width: 5vw;
+    height: 4vh;
+    font-size: 22px;
+}
+
+.lang-selector-choice {
+    cursor: pointer;
+    background-color: white;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lang-selector-choice.selected {
+    background-color: lightgray;
+}
+
+.not-selected {
+    display: none;
+}
+
+#code-of-conduct-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 70vh; */
+    margin: 10px 20% 25px 20%;
+}
+
+#coc-body {
+    color: black;
+}
+
+#coc-line {
+    width: 10%;
+    height: 0px;
+    border: black 1px solid;
+    position: relative;
+}
+
+.coc-subtitle {
+    font-size: 2.5vh;
+    color: var(--main-blue);
+}
+
+.li-coc {
+    margin-left: 10px;
+}
+
+.coc-imp {
+    color: hsl(14, 72%, 51%);
+    font-weight: bold;
+}
 
 #application-section {
     /* height: 50vh; */
@@ -51,7 +111,7 @@
 }
 
 #conf-info-title {
-    font-size: 52px;
+    font-size: 4vh;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif
 }
