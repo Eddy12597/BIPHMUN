@@ -80,6 +80,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.fee {
+    color: hsl(39, 91%, 74%);
+}
+
 .info-category-name {
     font-size: 28px;
     font-weight: bold;
