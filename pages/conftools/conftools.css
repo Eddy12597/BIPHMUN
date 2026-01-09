@@ -1,0 +1,9 @@
+#conftools-hero {
+    width: 100vw;
+    height: 60vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
