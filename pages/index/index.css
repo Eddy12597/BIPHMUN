@@ -109,7 +109,7 @@ a {
 }
 
 .info-highlight {
-    color: hsl(39, 100%, 64%);
+    color: hwb(39 44% 0%);
 }
 
 #group-photo-outer-div {
