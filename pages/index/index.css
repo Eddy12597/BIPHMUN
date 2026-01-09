@@ -108,6 +108,10 @@ a {
     font-family: "Times New Roman";
 }
 
+.info-highlight {
+    color: hsl(39, 100%, 64%);
+}
+
 #group-photo-outer-div {
     /* display: flex; */
     position: relative;
