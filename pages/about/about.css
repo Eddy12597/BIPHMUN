@@ -72,22 +72,27 @@
 }
 
 #timeline-container {
-    background-color: white;
-    width: 70%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4.5%;
+  position: relative;
+  background-color: white;
+  width: 85%;
+  height: 65%;
+  display: flex;
+  padding: 10px 40px 10px 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
 
 .timeline-event {
-    color: black;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    width: 20%;
+  position: relative;
+  color: black;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 15%;
+  flex-shrink: 0;
+  padding: 0 15px;
 }
 
 .timeline-title {
@@ -96,56 +101,32 @@
     color: var(--main-blue);
 }
 
+#timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-circle {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
 .timeline-event.odd-t {
-    margin-bottom: 15%;
+  margin-top: 15%; /* Adjust as needed */
 }
 
 .timeline-event.even-t {
-    margin-bottom: -15%;
-}
-
-#timeline-line {
-    position: absolute;
-    width: 65%;
-    border: black solid 1px;
-}
-
-#circle-2022 {
-    position: absolute;
-    border-radius: 50%;
-    border: black solid 1px;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    margin-right: 65%;
-}
-
-#circle-2023 {
-    position: absolute;
-    border-radius: 50%;
-    border: black solid 1px;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    margin-right: 31%;
-}
-
-#circle-2024 {
-    position: absolute;
-    border-radius: 50%;
-    border: black solid 1px;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    margin-right: -3%;
-}
-
-#circle-2025 {
-    position: absolute;
-    border-radius: 50%;
-    border: black solid 1px;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    margin-right: -38%;
+  margin-bottom: 15%; /* Adjust as needed */
 }
