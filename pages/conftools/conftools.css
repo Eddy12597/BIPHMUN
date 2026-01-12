@@ -5,5 +5,17 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: 2.5vh; 
+    color: var(--main-blue);
+    margin-top: 5%;
 }
 
+.conftools-temp {
+    color: black;
+    margin: 5% 20% 0 20%;
+    font-size: 2vh;
+}
+
+#conftools-temp-gh-link {
+    color: var(--main-blue);
+}
