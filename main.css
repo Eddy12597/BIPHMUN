@@ -108,6 +108,10 @@
     color: var(--menu-text-color);
 }
 
+.link-icons:hover {
+    color: #ffb222;
+}
+
 #link-icons-dropdown {
     display: none;
     position: absolute;
