@@ -67,7 +67,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     /* height: 70vh; */
     margin: 10px 20% 25px 20%;
 }
