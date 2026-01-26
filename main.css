@@ -96,9 +96,17 @@
     position: relative;
 }
 
+#link-icons-section a {
+    text-decoration: none;
+}
+
+#dropdown-content a {
+    text-decoration: none;
+}
+
 .link-icons {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
 
     display: flex;
     justify-content: center;
@@ -106,6 +114,8 @@
 
     font-weight: normal;
     color: var(--menu-text-color);
+
+    text-decoration: none;
 }
 
 .link-icons:hover {
