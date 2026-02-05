@@ -36,3 +36,54 @@ widthMatch.addEventListener('change', handleWidthChange);
 
 // Run once on initial load
 handleWidthChange(widthMatch);
+
+let email = "";
+
+// ====== CONFIG ======
+const KEY = "jessJessSIXSEVENqwfpgjluy;arstdhneiozxcvbkm";   // Change this to anything secret
+
+// ====== CORE ======
+function xorTransform(str, key) {
+    let out = "";
+    for (let i = 0; i < str.length; i++) {
+        out += String.fromCharCode(
+            str.charCodeAt(i) ^ key.charCodeAt(i % key.length)
+        );
+    }
+    return out;
+}
+
+// ====== OBFUSCATE ======
+function obfuscate(plainText) {
+    const xored = xorTransform(plainText, KEY);
+    return btoa(xored);                 // Base64 encode
+}
+
+// ====== DEOBFUSCATE ======
+function deobfuscate(encoded) {
+    const decoded = atob(encoded);     // Base64 decode
+    return xorTransform(decoded, KEY);
+}
+
+const obf = "BxAdXigMAxsTKzkgLCUmJhgZB14EBQE="
+
+email = deobfuscate(obf);
+
+document.addEventListener('DOMContentLoaded', (ev) => {
+    let classes = [...document.getElementsByClassName("email-js")]
+    classes.forEach(element => {
+        element.href = `mailto:${email}`;
+        element.innerHTML = email;
+        
+    });
+    
+});
+
+const biphmun_decoration = 
+String.raw`  ____ ___ ____  _   _ __  __ _   _ _   _   ____   ___ ____   __   
+ | __ )_ _|  _ \| | | |  \/  | | | | \ | | |___ \ / _ \___ \ / /_  
+ |  _ \| || |_) | |_| | |\/| | | | |  \| |   __) | | | |__) | '_ \ 
+ | |_) | ||  __/|  _  | |  | | |_| | |\  |  / __/| |_| / __/| (_) |
+ |____/___|_|   |_| |_|_|  |_|\___/|_| \_| |_____|\___/_____|\___/ 
+                                                                   `
+console.log(biphmun_decoration);
