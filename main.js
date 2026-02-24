@@ -79,8 +79,11 @@ document.addEventListener('DOMContentLoaded', (ev) => {
     
 });
 
+// https://patorjk.com/software/taag/#p=display&f=Standard&t=BIPHMUN+2026&x=none&v=4&h=4&w=80&we=false
+
 const biphmun_decoration = 
-String.raw`  ____ ___ ____  _   _ __  __ _   _ _   _   ____   ___ ____   __   
+String.raw
+`  ____ ___ ____  _   _ __  __ _   _ _   _   ____   ___ ____   __   
  | __ )_ _|  _ \| | | |  \/  | | | | \ | | |___ \ / _ \___ \ / /_  
  |  _ \| || |_) | |_| | |\/| | | | |  \| |   __) | | | |__) | '_ \ 
  | |_) | ||  __/|  _  | |  | | |_| | |\  |  / __/| |_| / __/| (_) |
