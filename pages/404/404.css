@@ -1,0 +1,11 @@
+#main-404 {
+    height: 55vh;
+    background-color: white;
+    color: var(--main-blue);
+    font-size: 1.67em;
+    margin-bottom: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
