@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'BIPHMUN_Formatted_' + selectedFile.name;
+            a.download = 'APP_' + selectedFile.name;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
