@@ -6,8 +6,8 @@
 
   <!--stylesheet and icon-->
   <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="pages/resoformatter/resoformatter.css"/>
   <link rel="stylesheet" href="pages/index/index.css"/>
-  <link rel="stylesheet" href="pages/conftools/conftools.css"/>
 
   <link rel="icon" href="assets/logos/favicon.ico" type="image/x-icon">
   
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
   <script src="main.js" defer></script>
-  <script src="pages/conftools/conftools.js" defer></script>
+  <script src="pages/resoformatter/resoformatter.js" defer></script>
 
   <title>BIPHMUN 2026 | Conference Tools</title>
 </head>
@@ -101,24 +101,26 @@
       </div>
     </div>
   </div>
-
-  <div id="main">
-    <div id="conftools-hero">
-      Conference Tools
-      <p class="conftools-temp">
-        Below are conference tools that are either in beta version or still under development
-      </p>
-
-      <div id="conftools-list">
-        <div class="conftools-li">
-          <a href="resoformatter.html" class="link">Resolution Formatter</a>
-        </div>
+  <div id="main-resof">
+      <h1 id="resof-title">Resolution Formatter</h1>
+      <p>Upload your .docx draft to correct formatting mistakes. Note: this tool is still in beta version, and errors may be present. Check after processing.</p>
+      
+      <div class="upload-area" id="dropZone">
+          <input type="file" id="fileInput" accept=".docx" style="display: none;">
+          <p>Drag and drop a file here, or click to select</p>
+          <button type="button" class="select-btn" onclick="document.getElementById('fileInput').click()">Select File</button>
       </div>
-
-      <p class="conftools-temp">
-        You can follow us on GitHub: <a class="link" href="https://github.com/BIPHMUN">https://github.com/BIPHMUN</a>
-      </p>
-    </div>
+      
+      <div class="file-info" id="fileInfo" style="display: none;">
+          <p><strong>Selected file:</strong> <span id="fileName"></span></p>
+          <p><strong>Size:</strong> <span id="fileSize"></span></p>
+      </div>
+      
+      <div style="text-align: center;">
+          <button id="processBtn" class="action-btn" disabled onclick="processFile()">Process Document</button>
+      </div>
+      
+      <div id="status"></div>
   </div>
 
 

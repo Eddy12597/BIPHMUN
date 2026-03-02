@@ -19,3 +19,32 @@
 #conftools-temp-gh-link {
     color: var(--main-blue);
 }
+
+.link {
+    color: var(--main-blue);
+}
+
+#conftools-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.conftools-li {
+    border: black 5px solid;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.conftools-li:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}

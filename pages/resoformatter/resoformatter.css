@@ -1,0 +1,87 @@
+#main-resof {
+    height: 70vh;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resof-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--main-blue);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.upload-area {
+    border: 2px dashed var(--main-blue);
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.upload-area:hover {
+    background-color: rgba(var(--main-blue-rgb), 0.05); /* Assumes you might have an RGB var, otherwise use a hex tint */
+    border-color: #333;
+}
+
+.file-info {
+    margin: 20px auto;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid var(--main-blue);
+    border-radius: 4px;
+    display: inline-block;
+    text-align: left;
+    min-width: 300px;
+}
+
+/* Buttons */
+.select-btn, .action-btn {
+    font-family: inherit;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 600;
+}
+
+.select-btn {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.action-btn {
+    background: var(--main-blue);
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.action-btn:hover:not(:disabled) {
+    filter: brightness(1.2);
+}
+
+.action-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Status Messages */
+#status {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.error { color: #d93025; }
+.success { color: #188038; }
