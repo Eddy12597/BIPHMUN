@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('file', selectedFile);
         
         try {
-            const response = await fetch('http://Eddy12597.pythonanywhere.com/upload', {
+            const response = await fetch('https://Eddy12597.pythonanywhere.com/upload', {
                 method: 'POST',
                 body: formData
             });
