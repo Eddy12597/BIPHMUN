@@ -1,0 +1,111 @@
+#main-vc {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    height: 67vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: var(--main-black);
+    text-align: center;
+}
+
+#main-vc h1 {
+    font-family: var(--main-title-font);
+    color: var(--main-blue);
+    margin-bottom: 25px;
+}
+
+.voting-config {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.radio-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.voting-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.vote-btn {
+    flex: 1;
+    padding: 20px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.vote-btn:active { transform: scale(0.95); }
+
+.vote-btn.for { background-color: #a6f3a6; color: #1e561e; }
+.vote-btn.against { background-color: #f3a6a6; color: #721c24; }
+.vote-btn.abstain { background-color: #f3e6a6; color: #856404; }
+
+.results-display {
+    padding: 20px;
+    border: 2px solid var(--main-blue);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+#statusMessage {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--main-blue);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.progress-info {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.ctrl-btn {
+    flex: 1;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ctrl-btn.reset {
+    background: #f8d7da;
+    color: #721c24;
+}

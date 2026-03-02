@@ -7,7 +7,7 @@
   <!--stylesheet and icon-->
   <link rel="stylesheet" href="main.css"/>
   <link rel="stylesheet" href="pages/index/index.css"/>
-  <link rel="stylesheet" href="pages/conftools/conftools.css"/>
+  <link rel="stylesheet" href="pages/votecounter/votecounter.css"/>
 
   <link rel="icon" href="assets/logos/favicon.ico" type="image/x-icon">
   
@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
   <script src="main.js" defer></script>
-  <script src="pages/conftools/conftools.js" defer></script>
+  <script src="pages/votecounter/votecounter.js" defer></script>
 
-  <title>BIPHMUN 2026 | Conference Tools</title>
+  <title>BIPHMUN 2026 | Conference Tools | Vote Counter</title>
 </head>
 <body>
   <div id="menubar">
@@ -102,25 +102,46 @@
     </div>
   </div>
 
-  <div id="main">
-    <div id="conftools-hero">
-      Conference Tools
-      <p class="conftools-temp">
-        Below are conference tools that are either in beta version or still under development
-      </p>
-
-      <div id="conftools-list">
-        <div class="conftools-li">
-          <a href="resoformatter.html" class="link">Resolution Formatter</a>
+  <div id="main-vc">
+    <h1>MUN Voting System</h1>
+    
+    <div class="voting-config">
+        <div class="input-group">
+            <label for="totalDelegates">Total Delegates:</label>
+            <input type="number" id="totalDelegates" value="0" min="1">
         </div>
-        <div class="conftools-li">
-          <a href="votecounter.html" class="link">Vote Counter</a>
-        </div>
-      </div>
 
-      <p class="conftools-temp">
-        You can follow us on GitHub: <a class="link" href="https://github.com/BIPHMUN">https://github.com/BIPHMUN</a>
-      </p>
+        <div class="rule-group">
+            <label>Majority Rule:</label>
+            <div class="radio-options">
+                <label><input type="radio" name="rule" value="simple" checked> Simple (>50%)</label>
+                <label><input type="radio" name="rule" value="twothirds"> Two-Thirds (≥66.7%)</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="voting-buttons">
+        <button id="btnFor" class="vote-btn for" onclick="castVote('for')">FOR</button>
+        <button id="btnAgainst" class="vote-btn against" onclick="castVote('against')">AGAINST</button>
+        <button id="btnAbstain" class="vote-btn abstain" onclick="castVote('abstain')">ABSTAIN</button>
+    </div>
+
+    <div class="results-display">
+        <div id="statusMessage">Set total delegates to begin</div>
+        <div class="stats-grid">
+            <div class="stat-item">FOR: <span id="countFor">0</span></div>
+            <div class="stat-item">AGAINST: <span id="countAgainst">0</span></div>
+            <div class="stat-item">ABSTAIN: <span id="countAbstain">0</span></div>
+        </div>
+        <div class="progress-info">
+            <p>CAST: <span id="castVotes">0</span> / <span id="displayTotal">0</span></p>
+            <p>REQUIRED TO PASS: <span id="neededVotes">-</span></p>
+        </div>
+    </div>
+
+    <div class="control-buttons">
+        <button onclick="undoVote()" class="ctrl-btn">Undo Last Vote</button>
+        <button onclick="resetVoting()" class="ctrl-btn reset">Reset</button>
     </div>
   </div>
 
