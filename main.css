@@ -18,7 +18,9 @@
     background: white;
 } */
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* settings */
 :root{
