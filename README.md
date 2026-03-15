@@ -1,5 +1,6 @@
 ![BIPHMUN](assets/images/banner-2026.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f0dc1113-61bb-4ddc-bf7a-3df368a12b59/deploy-status)](https://app.netlify.com/projects/biphmun/deploys)
 <p class="about-paragraph">
     We cordially invite you and your school to attend the fifth BASIS International School Park Lane Harbour Model United Nations that will take place on <b class="info-highlight">March 20-22, 2026</b> at our campus in Huizhou.
 </p>
