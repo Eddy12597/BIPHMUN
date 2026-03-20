@@ -85,3 +85,7 @@
 
 .error { color: #d93025; }
 .success { color: #188038; }
+
+#sample-reso-link {
+    color: var(--main-blue);
+}
