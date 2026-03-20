@@ -74,7 +74,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'APP_' + selectedFile.name;
+
+            // Try to get filename from headers
+            let filename = `APP_${selectedFile.name}`; // default fallback
+
+            // Try custom header first
+            const customFilename = response.headers.get('X-Filename');
+            if (customFilename) {
+                filename = customFilename;
+            } else {
+                // Fall back to Content-Disposition
+                const contentDisposition = response.headers.get('Content-Disposition');
+                if (contentDisposition) {
+                    const filenameMatch = contentDisposition.match(/filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/);
+                    if (filenameMatch && filenameMatch[1]) {
+                        filename = filenameMatch[1].replace(/['"]/g, '');
+                    }
+                }
+            }
+
+            a.download = filename;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
